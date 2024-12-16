@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.zinaida.trafficlights"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.zinaida.trafficlights"
@@ -32,6 +32,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    viewBinding {
+        enable = true
     }
 }
 
