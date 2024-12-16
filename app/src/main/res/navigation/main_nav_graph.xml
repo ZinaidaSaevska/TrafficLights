@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/fragmentCarModel">
+
+    <fragment
+        android:id="@+id/fragmentCarModel"
+        android:name="com.zinaida.trafficlights.FragmentCarModel"
+        android:label="fragment_car_model"
+        tools:layout="@layout/fragment_car_model" >
+        <action
+            android:id="@+id/action_fragmentCarModel_to_fragmentTrafficLights"
+            app:destination="@id/fragmentTrafficLights" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTrafficLights"
+        android:name="com.zinaida.trafficlights.FragmentTrafficLights"
+        android:label="fragment_traffic_lights"
+        tools:layout="@layout/fragment_traffic_lights" >
+        <argument
+            android:name="carModel"
+            app:argType="string" />
+    </fragment>
+</navigation>
