@@ -56,6 +56,12 @@ dependencies {
     implementation(libs.kotlinx.coroutines.core)
 
     testImplementation(libs.junit)
+
+    debugImplementation("androidx.fragment:fragment-testing-manifest:1.6.0")
+    androidTestImplementation("androidx.fragment:fragment-testing:1.6.0")
+
+    androidTestImplementation("androidx.navigation:navigation-testing:2.8.5")
+
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
