@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/fragmentCarModel"
         android:name="com.zinaida.trafficlights.FragmentCarModel"
-        android:label="fragment_car_model"
+        android:label="@string/fragment_title_car_model"
         tools:layout="@layout/fragment_car_model" >
         <action
             android:id="@+id/action_fragmentCarModel_to_fragmentTrafficLights"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/fragmentTrafficLights"
         android:name="com.zinaida.trafficlights.FragmentTrafficLights"
-        android:label="fragment_traffic_lights"
+        android:label="@string/fragment_title_traffic_lights"
         tools:layout="@layout/fragment_traffic_lights" >
         <argument
             android:name="carModel"
