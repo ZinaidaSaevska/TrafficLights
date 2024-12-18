@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TrafficLights</string>
+    <string name="hint_enter_car_model">Please, enter car model</string>
+    <string name="car_model_length_error">The minimum length for the model is 3 symbols</string>
+    <string name="btn_txt_start_driving">Start Driving</string>
+    <string name="fragment_title_car_model">Car Model</string>
+    <string name="fragment_title_traffic_lights">Traffic Lights</string>
 </resources>
