@@ -60,8 +60,6 @@ class FragmentTrafficLightsTest {
             navController.setCurrentDestination(R.id.fragmentTrafficLights, args.toBundle())
         }
 
-        Thread.sleep(100)
-
         onView(withId(R.id.iv_red_light)).check(matches(withColorFilter(activeColor)))
 
         Thread.sleep(LIGHT_DURATION)
@@ -87,7 +85,7 @@ class FragmentTrafficLightsTest {
             navController.setCurrentDestination(R.id.fragmentTrafficLights, args.toBundle())
         }
 
-        Thread.sleep(4300)
+        Thread.sleep(LIGHT_DURATION)
 
         onView(withId(R.id.iv_orange_light)).check(matches(withColorFilter(activeColor)))
 
@@ -113,7 +111,7 @@ class FragmentTrafficLightsTest {
             navController.setCurrentDestination(R.id.fragmentTrafficLights, args.toBundle())
         }
 
-        Thread.sleep(5500)
+        Thread.sleep(LIGHT_DURATION.plus(ORANGE_LIGHT_DURATION))
 
         onView(withId(R.id.iv_green_light)).check(matches(withColorFilter(activeColor)))
 

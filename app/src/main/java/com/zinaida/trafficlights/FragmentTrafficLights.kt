@@ -46,8 +46,6 @@ class FragmentTrafficLights : Fragment() {
                     binding.ivRedLight
                 )
 
-                delay(100)
-
                 //Orange
                 setUpLight(
                     ORANGE_LIGHT_DURATION,
@@ -55,8 +53,6 @@ class FragmentTrafficLights : Fragment() {
                     R.color.orange_inactive,
                     binding.ivOrangeLight
                 )
-
-                delay(100)
 
                 //Green
                 setUpLight(
@@ -70,9 +66,6 @@ class FragmentTrafficLights : Fragment() {
     }
 
     private suspend fun setUpLight(duration: Long, colorResFrom: Int, colorResTo: Int, view: ImageView) {
-
-        delay(100)
-
         view.setColorFilter(ContextCompat.getColor(requireContext(), colorResFrom))
 
         delay(duration)
